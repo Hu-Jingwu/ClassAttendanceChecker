@@ -1,13 +1,15 @@
-This is the attendance checker for the course I taken as Teachign Assistant.
+This attendance checker program is designed for a course where attendance is taken via Microsoft Forms, created using the university’s Office 365 account. The forms capture student email addresses in the format:
 
-The attendance are taken by Microsoft forms created by Univeristy Office 365 Account which can easily record the email address for the univeristy given by the form.
+StudentID@uni.edu.usa
 
-Student ID@uni.edu.usa
+The program works with .xlsx files, each named with the Week Number and Lecture Number, for example:
 
-There are .xlsx files named with Week Number and Lecture Number, Named as Attendance Week 5 Leture 2.
-There is .xlsx file for the student ID enrolled in thie course
+Attendance Week 5 Lecture 2.xlsx
 
-You can add more attendance files in the dictionary defined in the package.
+There is also an .xlsx file containing the list of student IDs enrolled in the course.
 
-The Checker programme can removed the @uni....., and compare with student ID list, if they enrolled in then mark as 1 else 0.
-The Checker programme can also idenfity the file name for Week and Lecture number and marked as W5L2 as shown.
+Key Features:
+The program can easily process multiple attendance files. You can add more files to a predefined dictionary in the package for batch processing.
+It removes the domain part of each student email (i.e., @uni.edu.usa) and compares the prefix (student ID) against the enrolled student ID list. If the student is enrolled, the program marks their attendance as 1; otherwise, it marks it as 0.
+The program automatically extracts the week and lecture number from the file name (e.g., "Attendance Week 5 Lecture 2" becomes W5L2), marking the attendance accordingly.
+
